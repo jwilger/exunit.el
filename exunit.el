@@ -178,6 +178,7 @@ and filename relative to the dependency."
   "Run command in comint mode."
   (pop-to-buffer (compile args 'exunit-iex-mode)))
 
+;;;###autoload
 (defun exunit-compile (args &optional directory)
   "Run mix test with the given ARGS."
   (let ((default-directory (or directory (exunit-project-root)))
